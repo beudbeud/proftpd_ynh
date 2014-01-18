@@ -16,7 +16,7 @@
             {
                 "name": "domain",
                 "ask": {
-                    "en": "Choose a domain for Firefox-Sync Server"
+                    "en": "Choose a domain for FTP server"
                 },
                 "example": "domain.org"
             }
