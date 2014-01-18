@@ -3,6 +3,12 @@
 # Retrieve arguments
 domain=$1
 
+# Check domain/path availability
+sudo yunohost app checkurl $domain -a proftpd
+if [[ ! $? -eq 0 ]]; then
+    exit 1
+fi
+
 # Install Proftpd 
 sudo apt-get install proftpd-mod-ldap -y
 
