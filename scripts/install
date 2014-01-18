@@ -3,10 +3,17 @@
 # Retrieve arguments
 domain=$1
 
+
 # Check domain/path availability
 sudo yunohost app checkurl $domain -a proftpd
 if [[ ! $? -eq 0 ]]; then
     exit 1
+fi
+
+# Check password if settings
+if [[ -z "$2" ]];then
+    passwd=$2
+    echo "www-data:$passwd" | chpasswd
 fi
 
 # Install Proftpd 
