@@ -1,0 +1,14 @@
+i#!/bin/bash
+
+# Retrieve arguments
+domain=$1
+
+# Install Proftpd 
+sudo apt-get install proftpd-mod-ldap -y
+
+# Copy files to the right place
+final_path=/etc/proftpd
+sudo cp ../conf/* $final_path/
+
+# add iptables rules
+#sudo yunohost firewall allow tcp 5000:5100 

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo apt-get autoremove --purge proftpd*
+#sudo yunohost firewall disallow tcp 5000:5100
