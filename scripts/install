@@ -17,7 +17,7 @@ if [[ -z "$2" ]];then
 fi
 
 # Install Proftpd 
-sudo apt-get install proftpd-mod-ldap -y
+sudo DEBIAN_FRONTEND='noninteractive' apt-get install proftpd-mod-ldap -y
 
 # Copy files to the right place
 final_path=/etc/proftpd
