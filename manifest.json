@@ -19,6 +19,12 @@
                     "en": "Choose a domain for FTP server"
                 },
                 "example": "domain.org"
+            },
+            {
+                "name": "password",
+                "ask": {
+                    "en": "Choose a password for www-data (if empty, www-data account doesn't enable)"
+                }
             }
         ]
     }
