@@ -13,7 +13,7 @@ fi
 # Check password if settings
 if [[ -z "$2" ]];then
     passwd=$2
-    echo "www-data:$passwd" | chpasswd
+    sudo echo "www-data:$passwd" | sudo chpasswd
 fi
 
 # Install Proftpd 
