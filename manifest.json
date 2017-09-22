@@ -2,8 +2,7 @@
     "name": "FTP Server",
     "id": "proftpd",
     "description": {
-        "en": "",
-        "fr": ""
+        "en": "Highly configurable GPL-licensed FTP server software"
     },
     "developer": {
         "name": "beudbeud",
